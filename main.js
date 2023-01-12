@@ -20,3 +20,11 @@ let random = Math.floor(Math.random()*1000);
 console.log(data1.user[random].first_name);
 
 console.log(random);
+
+
+// import company datas
+
+import data2 from './MOCK_DATA (1).json' assert { type : 'json'};
+
+console.log(data2.Company[random]['company name']);
+
