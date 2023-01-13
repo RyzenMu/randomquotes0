@@ -35,9 +35,15 @@ p = document.querySelector('p');
 
 let quoteToBeDisplayed  = null;
 
-quoteToBeDisplayed = data.quotes[13].quote;
+quoteToBeDisplayed = data.quotes[randominhtml()].quote;
 
 p.innerHTML = quoteToBeDisplayed;
+
+function randominhtml(){
+    let r = null;
+    r = Math.floor(Math.random()*100);
+    return r;
+}
 
 
 
