@@ -28,3 +28,18 @@ import data2 from './MOCK_DATA (1).json' assert { type : 'json'};
 
 console.log(data2.Company[random]['company name']);
 
+// displaying quotes on the page
+let p = null;
+
+p = document.querySelector('p');
+
+let quoteToBeDisplayed  = null;
+
+quoteToBeDisplayed = data.quotes[13].quote;
+
+p.innerHTML = quoteToBeDisplayed;
+
+
+
+
+
